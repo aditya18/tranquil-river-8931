@@ -9,17 +9,21 @@ app.use(express.static(__dirname + '/public'));
 
 
 
-app.get('/', function(request, response) {
+/*app.get('/', function(request, response) {
   response.send('Hello World! this is really cool!');
 });
-
+*/
 
 //app.get('/adi', function(request, response) {
   //response.send('Hello adi! you are funny weird!');
 //});
 
-app.get('/adi', function(req,res){
+app.get('/', function(req,res){
 	res.render('index');
+});
+
+app.get('/createRide', function(req,res){
+	res.render('createRide');
 });
 
 
