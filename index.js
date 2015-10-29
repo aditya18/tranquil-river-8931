@@ -1,9 +1,9 @@
 var express = require('express');
-var mongojs = require('mongojs');
+/*var mongojs = require('mongojs');
 var bodyParser = require('body-parser');
 
 
-var db = mongojs('contactlist', ['contactlist']);
+var db = mongojs('contactlist', ['contactlist']);*/
 
 var app = express();
 
@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 
 app.use(express.static(__dirname + '/public'));
 
-app.use(bodyParser.json());
+/*app.use(bodyParser.json());
 
 app.get('/contactList', function(req, res){
 	console.log("I got a GET request!!");
@@ -64,7 +64,7 @@ app.put('/contactlist/:id', function(req, res){
 			res.json(doc);
 		});
 });
-
+*/
 
 app.get('/', function(req,res){
 	res.render('index');
